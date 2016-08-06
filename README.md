@@ -1,0 +1,1 @@
+vue全家桶，整合了vue-resource与vuex 内含demo
