@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ msg }}
+    <a v-link="{ path: '/father1Page' }">{{ msg }}</a>
   </div>
 </template>
 

@@ -1,5 +1,7 @@
 <template>
   <h1>{{ msg }}</h1>
+  <a v-link="{ path: '/father2Page' }">tofather2</a>
+  <button @click="goFather2">tofather2</button>
 </template>
 
 <script>
@@ -11,6 +13,13 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
       msg: 'child1'
+    }
+  },
+  methods:{
+    goFather2(){
+      this.$router.go({ 
+        path: '/father2Page' 
+      })
     }
   }
 }

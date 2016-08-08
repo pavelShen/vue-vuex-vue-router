@@ -2,6 +2,7 @@
   <div>
     {{ msg }}
     <child1></child1>
+    <br />
     <child2></child2>
   </div>
 </template>
