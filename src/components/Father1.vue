@@ -22,7 +22,7 @@ export default {
     child2
   },
   ready(){
-    console.log('ready');
+    
   }
 }
 </script>

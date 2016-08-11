@@ -2,6 +2,7 @@
   <h1>{{ msg }}</h1>
   <a v-link="{ path: '/father2Page' }">tofather2</a>
   <button @click="goFather2">tofather2</button>
+  <button @click="addStoreCount">addStoreCount</button>
 </template>
 
 <script>
@@ -20,6 +21,13 @@ export default {
       this.$router.go({ 
         path: '/father2Page' 
       })
+    }
+  },
+  vuex:{
+    actions:{
+      addStoreCount({dispatch,state},data){
+        dispatch('INCREMENT',2)
+      }
     }
   }
 }

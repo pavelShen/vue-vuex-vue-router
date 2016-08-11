@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
-import Store from './vuex/store.js';
+import store from './vuex/store.js';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -12,7 +12,7 @@ import Child1 from './components/Child1.vue';
 import Child2 from './components/Child2.vue';
 
 let App = Vue.extend({
-  Store
+  store:store
 });
 
 let router = new VueRouter({
