@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import commonFunction from '../commonFunction/commonFunction.js';
+
 export default {
   data () {
     return {
@@ -18,8 +20,8 @@ export default {
   },
   methods:{
     goFather2(){
-      this.$router.go({ 
-        path: '/father2Page' 
+      this.$router.go({
+        path: '/father2Page'
       })
     }
   },

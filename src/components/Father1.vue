@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import commonFunction from '../commonFunction/commonFunction.js';
+
 import child1 from './Child1.vue';
 import child2 from './Child2.vue';
 
@@ -22,7 +24,7 @@ export default {
     child2
   },
   ready(){
-    
+    commonFunction.log('aa');
   }
 }
 </script>

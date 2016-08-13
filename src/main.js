@@ -6,11 +6,6 @@ import store from './vuex/store.js';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-import Father1 from './components/Father1.vue';
-import Father2 from './components/Father2.vue';
-import Child1 from './components/Child1.vue';
-import Child2 from './components/Child2.vue';
-
 let App = Vue.extend({
   store:store
 });
@@ -23,15 +18,21 @@ let router = new VueRouter({
 router.map({
     '/': {
         name:'basic',
-        component: Father1
+        component: function (resolve) {
+          require(['./components/Father1.vue'], resolve)
+        }
     },
     '/father1Page': {
         name:'father1',
-        component: Father1
+        component: function (resolve) {
+          require(['./components/Father1.vue'], resolve)
+        }
     },
     '/father2Page': {
         name:'father2',
-        component: Father2
+        component: function (resolve) {
+          require(['./components/Father2.vue'], resolve)
+        }
     }
 });
 

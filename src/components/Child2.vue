@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import commonFunction from '../commonFunction/commonFunction.js';
+
 export default {
   data () {
     return {
