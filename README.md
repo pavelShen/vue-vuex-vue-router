@@ -1,4 +1,4 @@
-# vue全家桶，整合了vue-resource,vue-router与vuex 内含demo
+# vue全家桶，使用webpack打包，整合了vue-resource,vue-router与vuex 内含demo
 
 ## TODO
   - 常用的方法(公用)
